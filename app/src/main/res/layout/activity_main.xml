@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_biru_muda"
+    tools:context="com.example.andriginting.pisang.MainActivity">
+    <TextView
+        android:id="@+id/judulapps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PISANG"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="25sp"
+        android:textColor="@color/bg_biru_muda"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/btn_login_putih"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_above="@id/btn_register" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/btn_register_biru"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
