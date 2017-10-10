@@ -49,23 +49,22 @@ public class Login extends AppCompatActivity {
         password=(EditText)findViewById(R.id.input_password);
         login = (Button)findViewById(R.id.btn_login_inUser);
 
-        Button btn = (Button) findViewById(R.id.btn_login_inUser);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Login.this,MainMenu.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
+        //get firebase instance
         mAuth =FirebaseAuth.getInstance();
+        if (mAuth.getCurrentUser() != null){
+            startActivity(new Intent(this,MainMenu.class));
+            overridePendingTransition(R.anim.slide_from_bottom,R.anim.slide_to_top);
+            finish();
+        }
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //signIn(email.getText().toString(),password.getText().toString());
+                signIn(email.getText().toString(),password.getText().toString());
                 Intent login = new Intent(Login.this,MainMenu.class);
                 startActivity(login);
+                overridePendingTransition(R.anim.slide_from_bottom,R.anim.slide_to_top);
+                finish();
             }
         });
 

@@ -8,6 +8,7 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
+import android.view.Menu;
 import android.view.View;
 
 import com.example.andriginting.pisang.Adapter.KontenAdapter;
@@ -41,6 +42,12 @@ public class MainMenu extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
         gambar();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.item_add,menu);
+        return true;
     }
 
     private int dpToPx(int i) {
