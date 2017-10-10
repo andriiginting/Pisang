@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:attribute="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.andriginting.pisang.Login">
+    tools:context="com.example.andriginting.pisang.activity.Login">
 
     <com.github.florent37.arclayout.ArcLayout
+        android:id="@+id/arc_login"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:layout_alignParentTop="true"
         app:arc_cropDirection="cropOutside"
         app:arc_height="50dp"
         android:elevation="3dp"
@@ -28,13 +29,14 @@
     </com.github.florent37.arclayout.ArcLayout>
 
     <EditText
+        android:layout_centerInParent="true"
         android:id="@+id/input_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:paddingLeft="25dp"
         android:paddingRight="12dp"
         android:drawablePadding="20dp"
@@ -45,6 +47,7 @@
         android:background="@drawable/edittext_username"/>
 
     <EditText
+        android:layout_below="@id/input_email"
         android:id="@+id/input_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,14 +62,15 @@
         android:paddingTop="12dp"
         android:hint="Password"
         android:drawableLeft="@drawable/key"
-
         android:inputType="textPassword"
         android:background="@drawable/edittext_username"/>
     <TextView
+        android:layout_below="@id/input_password"
+        android:layout_alignParentRight="true"
         android:id="@+id/text_lupa_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lupa Password ?"
+        android:text="Forgot Password ?"
         android:textSize="16sp"
         android:layout_marginTop="10dp"
         android:layout_gravity="right"
@@ -75,20 +79,23 @@
 
     <Button
         android:id="@+id/btn_login_inUser"
+        android:layout_below="@+id/text_lupa_password"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:text="LOGIN"
         android:textColor="@android:color/white"
         android:background="@drawable/btn_register_biru"
-        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:elevation="5dp"
         />
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
         android:gravity="center">
         <TextView
             android:id="@+id/reg"
@@ -106,8 +113,7 @@
             android:textColor="@color/bg_biru_muda"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_alignParentBottom="true"
             android:layout_toRightOf="@+id/reg"/>
-    </RelativeLayout>
+    </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

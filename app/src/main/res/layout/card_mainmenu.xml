@@ -1,29 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp">
 
-    <android.support.v7.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="5dp"
-        android:layout_gravity="center"
-        android:layout_margin="5dp">
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
         <ImageView
             android:id="@+id/image_card_mainMenu"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="160dp"
+            android:src="@drawable/banana"
             />
         <TextView
+            android:id="@+id/nama_kontent_mainMenu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/nama_kontent_mainMenu"
-            android:text="Coklat"/>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
-</LinearLayout>
+            android:text="Pisang"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,8 +1,9 @@
-package com.example.andriginting.pisang
+package com.example.andriginting.pisang.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.example.andriginting.pisang.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

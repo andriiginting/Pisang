@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_biru_muda"
-    tools:context="com.example.andriginting.pisang.MainActivity">
+    tools:context="com.example.andriginting.pisang.activity.MainActivity">
     <TextView
         android:id="@+id/judulapps"
         android:layout_width="wrap_content"

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1075410280811",
+    "firebase_url": "https://pisang-25239.firebaseio.com",
+    "project_id": "pisang-25239",
+    "storage_bucket": "pisang-25239.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075410280811:android:076318323498b1cc",
+        "android_client_info": {
+          "package_name": "com.example.andriginting.pisang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075410280811-fvsbc4mng17vil9qtafjn6nkkptbbnaa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.andriginting.pisang",
+            "certificate_hash": "c6bb002cf3741f5e03258e8415a300b493d558e7"
+          }
+        },
+        {
+          "client_id": "1075410280811-qvqr2gcs657m56dlmpofv35a599rnm03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbOvTSc49KDeHEcML4lLvia9Q5iPfQrjs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075410280811-qvqr2gcs657m56dlmpofv35a599rnm03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
