@@ -106,7 +106,7 @@ public class NotificationUtils {
                 .build();
 
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-        notificationManager.notify(Config.NOTIFICATION_ID, notification);
+        notificationManager.notify(Config.INSTANCE.getNOTIFICATION_ID(), notification);
     }
 
     private void showBigNotification(Bitmap bitmap,NotificationCompat.Builder mBuilder, int icon, String title,
@@ -129,7 +129,7 @@ public class NotificationUtils {
                 .build();
 
         NotificationManager notificationManager = (NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
-        notificationManager.notify(Config.NOTIFICATION_ID_BIG_IMAGE,notification);
+        notificationManager.notify(Config.INSTANCE.getNOTIFICATION_ID_BIG_IMAGE(),notification);
     }
 
     public static long getTimeMiliSec(String timestamp) {
